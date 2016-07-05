@@ -197,5 +197,17 @@ function truthyOnlyArray(arrayInput) {
 }
 
 
-console.log(truthyOnlyArray(["Jessica", 15, false, 14, 0, "16"]));
+// console.log(truthyOnlyArray(["Jessica", 15, false, 14, 0, "16"]));
 
+// exercise 14: Write a function that takes an array of numbers, and returns the sum of all the numbers in the array.
+
+function addArrayNumbers(num) {
+    var totalSoFar = 0;
+    for (var i = 0; i < num.length; i++) {
+        totalSoFar = totalSoFar + num[i];
+    }
+    return totalSoFar;
+}
+
+console.log(addArrayNumbers([2, 3, 4, 5]));
+console.log(addArrayNumbers([10, 15, 5, 20]));
