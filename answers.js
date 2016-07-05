@@ -209,5 +209,28 @@ function addArrayNumbers(num) {
     return totalSoFar;
 }
 
-console.log(addArrayNumbers([2, 3, 4, 5]));
-console.log(addArrayNumbers([10, 15, 5, 20])); 
+// console.log(addArrayNumbers([2, 3, 4, 5]));
+// console.log(addArrayNumbers([10, 15, 5, 20])); 
+
+/*
+Write a function that takes two arrays, and returns an array of all elements that are only in one array. For example, with [1,2,3] and [1,2,4,5] the function should return [3,4,5]. Test your function on different inputs. Hint: you should look up array methods indexOf and slice.
+*/
+
+function numbersNotInBothArrays(list1, list2) {
+    var newListNotRepeated = [];
+    
+    for (var i = 0; i < list2.length; i++) {
+    if (list1.indexOf(list2[i]) < 0) {
+        newListNotRepeated.push(list2[i]);
+    } 
+}
+    for (var j = 0; j < list1.length; j++) {
+        if (list2.indexOf(list1[j]) < 0) {
+        newListNotRepeated.push(list1[j]);
+    }
+    }
+    return newListNotRepeated;
+}
+
+console.log(numbersNotInBothArrays([1, 2, 4, 5], [2, 4, 6, 7]));
+console.log(numbersNotInBothArrays([1000, -1, 4, 5], [100, 4, 6, 7, 1000]));
