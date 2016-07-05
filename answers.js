@@ -46,4 +46,5 @@ function addTwoNumbers(num1, num2) {
 console.log(addTwoNumbers(3, 4));
 console.log(addTwoNumbers(18, 2));
 console.log(addTwoNumbers("Jess", 6));
-// the function concatenates the two inputs if one/both inputs are a string.
+// the function concatenates the two inputs if one/both inputs are a string. 
+//I meant exercise 4 :()
