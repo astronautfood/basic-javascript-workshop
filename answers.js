@@ -55,7 +55,33 @@ function multiplyTwoNumbers(num1, num2) {
     return num1 * num2;
 }
 
-console.log(multiplyTwoNumbers(3, 5));
-console.log(multiplyTwoNumbers(100, 30));
-console.log(multiplyTwoNumbers("Jess", 4));
-//returns "Nan" (not a number) when an input other than a number is multiplied.
+// console.log(multiplyTwoNumbers(3, 5));
+// console.log(multiplyTwoNumbers(100, 30));
+// console.log(multiplyTwoNumbers("Jess", 4));
+// //returns "Nan" (not a number) when an input other than a number is multiplied.
+
+// Exercise 6 :) Two numbers, one string. String describes the operation to be performed on the two numbers.
+
+function twoNumOneString(num1, num2, str1) {
+    if (str1 === "add") {
+        return num1 + num2;
+    }
+    else if (str1 === "subtract") {
+        return num1 - num2;
+    }
+    else if (str1 === "mult") {
+        return num1 * num2;
+    }
+    else if (str1 === "div") {
+        return num1 / num2;
+    }
+    else {
+        return 0;
+    }
+}
+
+console.log(twoNumOneString(100, 20, "add"));
+console.log(twoNumOneString(100, 20, "subtract"));
+console.log(twoNumOneString(100, 20, "mult"));
+console.log(twoNumOneString(100, 20, "div"));
+console.log(twoNumOneString(100, 20, "blah"));
