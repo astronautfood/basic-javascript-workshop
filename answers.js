@@ -164,5 +164,21 @@ function capitalFirstLetter(phrase) {
     return capitalizedSentence;
 }
 
-console.log(capitalFirstLetter("Hi, how's it going?"));
-console.log(capitalFirstLetter("I am so bad at this exercise."));
+// console.log(capitalFirstLetter("Hi, how's it going?"));
+// console.log(capitalFirstLetter("I am so bad at this exercise."));
+
+//Exercise 12: return largest number in array
+
+
+function largestNumInArray (numbers) {
+    var largestSoFar = 0; 
+    for (var i = 0; i < numbers.length; i++) {
+        if (numbers[i] > largestSoFar) {
+            largestSoFar = numbers[i];
+    }
+}
+return largestSoFar;
+}
+
+console.log(largestNumInArray([3, 4, 5, 6,]));
+console.log(largestNumInArray([1000, 900, 9999, 0]));
