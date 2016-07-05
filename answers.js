@@ -43,8 +43,19 @@ function addTwoNumbers(num1, num2) {
     return num1 + num2;
 }
 
-console.log(addTwoNumbers(3, 4));
-console.log(addTwoNumbers(18, 2));
-console.log(addTwoNumbers("Jess", 6));
+// console.log(addTwoNumbers(3, 4));
+// console.log(addTwoNumbers(18, 2));
+// console.log(addTwoNumbers("Jess", 6));
 // the function concatenates the two inputs if one/both inputs are a string. 
 //I meant exercise 4 :()
+
+// Exercise 5. Multiple two inputs, including not a number
+
+function multiplyTwoNumbers(num1, num2) {
+    return num1 * num2;
+}
+
+console.log(multiplyTwoNumbers(3, 5));
+console.log(multiplyTwoNumbers(100, 30));
+console.log(multiplyTwoNumbers("Jess", 4));
+//returns "Nan" (not a number) when an input other than a number is multiplied.
