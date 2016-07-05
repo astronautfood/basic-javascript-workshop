@@ -80,8 +80,19 @@ function twoNumOneString(num1, num2, str1) {
     }
 }
 
-console.log(twoNumOneString(100, 20, "add"));
-console.log(twoNumOneString(100, 20, "subtract"));
-console.log(twoNumOneString(100, 20, "mult"));
-console.log(twoNumOneString(100, 20, "div"));
-console.log(twoNumOneString(100, 20, "blah"));
+// console.log(twoNumOneString(100, 20, "add"));
+// console.log(twoNumOneString(100, 20, "subtract"));
+// console.log(twoNumOneString(100, 20, "mult"));
+// console.log(twoNumOneString(100, 20, "div"));
+// console.log(twoNumOneString(100, 20, "blah"));
+
+// Exercise 7. Woo! "Write a function that takes a string and a number, and returns the string repeated that many number of times. Test your function with various inputs."
+
+function repeatTheString(wordToRepeat, numOfRepeats) {
+    for (var i = 0; i < numOfRepeats; i++) {
+        console.log(wordToRepeat);
+    }
+}
+repeatTheString("Jessica", 4);
+repeatTheString("hello", 3);
+
