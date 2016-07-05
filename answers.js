@@ -180,5 +180,22 @@ function largestNumInArray (numbers) {
 return largestSoFar;
 }
 
-console.log(largestNumInArray([3, 4, 5, 6,]));
-console.log(largestNumInArray([1000, 900, 9999, 0]));
+// console.log(largestNumInArray([3, 4, 5, 6,]));
+// console.log(largestNumInArray([1000, 900, 9999, 0]));
+
+/* exercise 13: Write a function that takes an array, and returns a filtered array. The filtered array should only contain the truthy values from the initial array. Hint: there is an array method called filter that can help you with this :)
+*/
+function truthyOnlyArray(arrayInput) {
+    var truthyNumsSoFar = [];
+        for (var i = 0; i < arrayInput.length; i++) {
+            
+            if (arrayInput[i]) {
+                truthyNumsSoFar.push(arrayInput[i]);
+            }
+        }
+        return truthyNumsSoFar;
+}
+
+
+console.log(truthyOnlyArray(["Jessica", 15, false, 14, 0, "16"]));
+
