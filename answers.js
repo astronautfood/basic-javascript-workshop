@@ -210,4 +210,4 @@ function addArrayNumbers(num) {
 }
 
 console.log(addArrayNumbers([2, 3, 4, 5]));
-console.log(addArrayNumbers([10, 15, 5, 20]));
+console.log(addArrayNumbers([10, 15, 5, 20])); 
