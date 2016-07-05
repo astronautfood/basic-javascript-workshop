@@ -31,6 +31,19 @@ function charAtNumber(word, number) {
     return word.charAt(number - 1);
 }
 
-console.log(charAtNumber("jeSsica", 3));
-console.log(charAtNumber("charActer", 5));
-console.log(charAtNumber("", 4));
+// console.log(charAtNumber("jeSsica", 3));
+// console.log(charAtNumber("charActer", 5));
+// console.log(charAtNumber("", 4));
+
+/* 
+Write a function that takes two numbers and adds them together. Test your function on a few inputs. Write in the comments what happens when you pass something other than a number to your function.
+*/
+
+function addTwoNumbers(num1, num2) {
+    return num1 + num2;
+}
+
+console.log(addTwoNumbers(3, 4));
+console.log(addTwoNumbers(18, 2));
+console.log(addTwoNumbers("Jess", 6));
+// the function concatenates the two inputs if one/both inputs are a string.
