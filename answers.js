@@ -88,11 +88,26 @@ function twoNumOneString(num1, num2, str1) {
 
 // Exercise 7. Woo! "Write a function that takes a string and a number, and returns the string repeated that many number of times. Test your function with various inputs."
 
-function repeatTheString(wordToRepeat, numOfRepeats) {
-    for (var i = 0; i < numOfRepeats; i++) {
-        console.log(wordToRepeat);
+// function repeatTheString(wordToRepeat, numOfRepeats) {
+//     for (var i = 0; i < numOfRepeats; i++) {
+//         console.log(wordToRepeat);
+//     }
+// }
+// repeatTheString("Jessica", 4);
+// repeatTheString("hello", 3);
+
+/* Exercise 8! "Write a function that takes a string, and returns the reverse of that string. For example, if you pass the function the string “hello”, it should return “olleh”. Test your function on a few inputs, including the empty string."
+*/
+
+function reverseSpelling (wordToReverse) {
+    var reversed = [];
+    for (var i = wordToReverse.length - 1; i >= 0; i--) {
+        reversed.push(wordToReverse[i]);
     }
+    return reversed;
 }
-repeatTheString("Jessica", 4);
-repeatTheString("hello", 3);
+
+console.log(reverseSpelling("Jessica").join(""));
+console.log(reverseSpelling("Mitchell").join(""));
+console.log(reverseSpelling("hello").join(""));
 
