@@ -145,5 +145,24 @@ function longWordInPhrase(phrase) {
 }
 
 
-console.log(longWordInPhrase("Hi, how it is going?"));
-console.log(longWordInPhrase("Today is the second day of Decode. Woo!"));
+// console.log(longWordInPhrase("Hi, how it is going?"));
+// console.log(longWordInPhrase("Today is the second day of Decode. Woo!"));
+
+/* 
+Exercise 11: "Write a function that takes a phrase, and returns the same phrase with every word capitalized. For example, if you pass your function "hello world", it should return “Hello World” and if you pass it “HELLO WORLD” or even "HeLLo WoRLD", it will also return "Hello World". Test your function of a few inputs."
+*/
+
+function capitalFirstLetter(phrase) {
+    var lowerCase = phrase.toLowerCase();
+    var wordsInPhrase = lowerCase.split(" ");
+    var capitalizedSentence = "";
+    
+    for (var i = 0; i < wordsInPhrase.length; i++) {
+        var wordAdd = wordsInPhrase[i].charAt(0).toUpperCase() + wordsInPhrase[i].slice(1);
+        capitalizedSentence = capitalizedSentence + wordAdd + " ";
+    }
+    return capitalizedSentence;
+}
+
+console.log(capitalFirstLetter("Hi, how's it going?"));
+console.log(capitalFirstLetter("I am so bad at this exercise."));
