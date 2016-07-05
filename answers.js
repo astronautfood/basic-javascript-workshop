@@ -107,7 +107,23 @@ function reverseSpelling (wordToReverse) {
     return reversed;
 }
 
-console.log(reverseSpelling("Jessica").join(""));
-console.log(reverseSpelling("Mitchell").join(""));
-console.log(reverseSpelling("hello").join(""));
+// console.log(reverseSpelling("Jessica").join(""));
+// console.log(reverseSpelling("Mitchell").join(""));
+// console.log(reverseSpelling("hello").join(""));
 
+// Exercise 9: Take number, return the factorial of that number
+
+function factorial(num1) {
+    var nums = [];
+    var finalAnswer = 1;
+    for(var i = 1; i <= num1; i++){
+        nums.push(i);
+    }
+    for(var i = 0; i < nums.length; i++){
+        finalAnswer = finalAnswer * nums[i];
+    }
+    return finalAnswer;
+}
+console.log(factorial(5));
+console.log(factorial(3));
+console.log(factorial(-1));
