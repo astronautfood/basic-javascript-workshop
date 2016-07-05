@@ -124,6 +124,26 @@ function factorial(num1) {
     }
     return finalAnswer;
 }
-console.log(factorial(5));
-console.log(factorial(3));
-console.log(factorial(-1));
+// console.log(factorial(5));
+// console.log(factorial(3));
+// console.log(factorial(-1));
+
+/* Exercise 10: Write a function that takes a phrase as a string, and returns the longest word in that phrase. If the phrase contains more than one such word, return the first occurrence. Test your function on a few inputs.
+*/
+
+function longWordInPhrase(phrase) {
+    var phraseArray = phrase.split(" ");
+    var longestLength = 0;
+    var longestWord;
+       for (var i = 0; i < phraseArray.length; i++) {
+           if (longestLength < phraseArray[i].length) {
+               longestLength = phraseArray[i].length;
+               longestWord = phraseArray[i];
+           }
+       }
+       return longestWord
+}
+
+
+console.log(longWordInPhrase("Hi, how it is going?"));
+console.log(longWordInPhrase("Today is the second day of Decode. Woo!"));
