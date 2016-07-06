@@ -232,5 +232,18 @@ function numbersNotInBothArrays(list1, list2) {
     return newListNotRepeated;
 }
 
-console.log(numbersNotInBothArrays([1, 2, 4, 5], [2, 4, 6, 7]));
-console.log(numbersNotInBothArrays([1000, -1, 4, 5], [100, 4, 6, 7, 1000]));
+// console.log(numbersNotInBothArrays([1, 2, 4, 5], [2, 4, 6, 7]));
+// console.log(numbersNotInBothArrays([1000, -1, 4, 5], [100, 4, 6, 7, 1000]));
+
+// mini challenge
+
+function arrayAndFunction(array1, function1) {
+    var newArray = [];
+    
+    for (var i = 0; i < array1.length; i++) {
+        newArray.push(function1(array1[i]))
+    }
+    return newArray;
+}
+
+console.log(arrayAndFunction(["Jared", "Max", "Jess", "Dennis"], firstLetter));
